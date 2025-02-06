@@ -136,7 +136,6 @@ create table tbl_image(
     image_name varchar(64)
 );
 
-
 create table tbl_otp(
 	otp_id bigint primary key auto_increment,
     actions enum("Signin", "Signup", "Forget", "Profile"),
@@ -477,7 +476,6 @@ insert into tbl_user (user_name, email_id, passwords, phone_number) values
 
 -- Forgot Password
 -- email id: mahek.gce@gmail.com
-
 -- Insert Reset Token for Forgot Password: 
 insert into tbl_forgot_password(email_id, reset_token, expires_at)
 values ("mahek.gce@gmail.com", 'sometokenblahblah', '2025-02-10 23:59:59');
