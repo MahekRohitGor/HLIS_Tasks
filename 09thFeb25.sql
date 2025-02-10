@@ -825,3 +825,35 @@ DELIMITER ;
 -- Check
 INSERT INTO tbl_order_item (order_id, product_id, quantity, market_price, discount, final_price) 
 VALUES (1, 13, 2, 2000, 10, 1800);
+
+-- Past Orders
+select o.payment_type, 
+o.total_price, 
+o.order_status, 
+o.order_date,
+cdc.type,
+cdc.name_of_bank,
+cdc.name_on_card,
+a.address
+from tbl_order o inner join tbl_address a on 
+o.address_id = a.address_id
+inner join 
+tbl_credit_debit_card cdc
+on cdc.id = o.credit_debit_card_id
+where o.user_id = 4 and delivered_time is not null;
+
+-- Pending/Placed Orders
+select o.payment_type, 
+o.total_price, 
+o.order_status, 
+o.order_date,
+cdc.type,
+cdc.name_of_bank,
+cdc.name_on_card,
+a.address
+from tbl_order o inner join tbl_address a on 
+o.address_id = a.address_id
+inner join 
+tbl_credit_debit_card cdc
+on cdc.id = o.credit_debit_card_id
+where o.user_id = 4 and order_status in ("Placed", "Pending");
