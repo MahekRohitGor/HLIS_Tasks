@@ -74,6 +74,7 @@ INSERT INTO tbl_user (name, age, gender, email, passwordd, profile_pic, login_ty
 VALUES
 ('Alice Johnson', 25, 'F', 'alice@example.com', 'pass1234', 'alice.jpg', 'S', 'Painting', 'SOC12345', TRUE, '2024-01-10 12:00:00', '2024-01-15 14:30:00'),
 ('Bob Smith', 30, 'M', 'bob@example.com', 'securePass', 'bob.png', 'G', 'Photography', 'SOC67890', TRUE, '2024-01-11 11:30:00', '2024-01-16 15:00:00'),
+('Bob Smith', 30, 'M', 'bob@example.com', 'securePass', 'bob.png', 'G', 'Photography', 'SOC67890', TRUE, '2024-01-11 11:30:00', '2024-01-16 15:00:00'),
 ('Charlie Brown', 22, 'M', 'charlie@example.com', 'charliePass', 'charlie.jpg', 'F', 'Sketching', 'SOC24680', FALSE, '2024-01-12 10:00:00', NULL),
 ('Diana Prince', 28, 'F', 'diana@example.com', 'dianaSecure', 'diana.png', 'S', 'Digital Art', 'SOC13579', TRUE, '2024-01-13 09:00:00', '2024-01-17 16:30:00'),
 ('Ethan White', 35, 'M', 'ethan@example.com', 'ethanStrong', 'ethan.jpg', 'G', 'Sculpting', 'SOC97531', TRUE, '2024-01-14 08:00:00', NULL),

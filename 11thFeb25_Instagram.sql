@@ -1,6 +1,8 @@
 CREATE DATABASE INSTAGRAM;
 USE INSTAGRAM;
 
+-- Use BLOB in comments
+
 create table tbl_socials(
     social_id varchar(128) primary key auto_increment,
     name_ varchar(128),
